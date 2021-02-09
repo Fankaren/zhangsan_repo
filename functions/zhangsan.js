@@ -1,7 +1,7 @@
 const Telegraf = require('telegraf');
 const startAction = require('./zhangsana/start')
 const inlineAction = require('./zhangsana/inline')
-const bot = new Telegraf(process.env.TOCAMOSA_BOT_TOKEN);
+const bot = new Telegraf(process.env.ZHANGSAN_BOT_TOKEN);
 
 bot.start(ctx => {
 return startAction(ctx)
